@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+
+
+
+#darkBack {
+  width: 100%;
+  height: 100vh;
+  background: rgba(76, 56, 75, .15);
+}
+
+#popUp {
+  position: fixed;
+  max-width: 330px;
+  height: 215px;
+  border-top-right-radius: 15px;
+  background: rgba(236, 240, 241, 1);
+  border: 3px solid rgba(81, 164, 60, 0.9);
+  bottom: 0;
+  margin-left: 0;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+#new span {
+  background: rgba(81, 164, 60, 0.9);
+  position: absolute;
+  color: #ffffff;
+  padding: 4px 10px;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-top: -1px;
+}
+
+#popUp .close {
+  color: #464646;
+  right: 3px;
+  top: 0px;
+  position: absolute;
+  font-size: 23px;
+  cursor: pointer;
+}
+
+#popUp h2 {
+  font-size: 17px;
+  color: #464646;
+  line-height: 24px;
+  font-weight: 400;
+  text-align: center;
+  margin-top: 5px;
+  padding: 0 10px;
+}
+
+#body {
+  height: 1200px;
+  background: #eee;
+}
+
+a.button {
+  margin: 0 auto;
+  text-align: center;
+  right: 0;
+  left: 0;
+  position: absolute;
+  width: 120px;
+  font-size: 15px;
+  color: #fff;
+  border-bottom: 2px solid rgba(81, 164, 60, 0.9);
+  background: rgba(81, 164, 60, 0.9);
+  border-radius: 4px;
+  padding: 8px 0;
+}
+
+#plus {
+  position: fixed;
+  color: #fff;
+  bottom: 0%;
+  font-size: 15px;
+  margin-left: -425px;
+  -webkit-transition: all 1.25s ease;
+  -moz-transition: all 1.25s ease;
+  -o-transition: all 1.25s ease;
+  transition: all 1.25s ease;
+  cursor: pointer;
+  text-align: left;
+  letter-spacing: 1px;
+}
+
+#plus span {
+  position: absolute;
+  margin-top: 38px;
+  left: 4px;
+}
+
+#plus::after {
+  content: '';
+  display: block;
+  display: relative;
+  border-top: 55px solid transparent;
+  border-bottom: 55px solid transparent;
+  border-left: 55px solid rgba(81, 164, 60, 0.9);;
+}
+
+@media all and (max-width: 2900px) {
+  #popUp {
+    margin-left: -425px;
+  }
+  #plus {
+    margin-left: 0px;
+  }
+}

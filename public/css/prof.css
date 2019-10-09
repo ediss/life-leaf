@@ -1,0 +1,46 @@
+
+
+/*- - - - - - C O N T A C T - C A R D S - - - - - */
+
+
+
+
+
+
+
+h3, a, i{
+	font-family: 'Roboto', sans-serif;
+	font-weight: lighter;
+	-webkit-transition: .1s ease-in-out;
+	transition: .1s ease-in-out;
+}
+
+
+
+	a{
+
+		padding: 5px 0px;
+		font-size: 14px;
+		text-decoration: none;
+	}
+
+
+
+ul{
+	margin-top: 10px;
+	padding: 15px 0px;
+
+}
+
+	ul a{
+		display: inline;
+		margin-right: 10px;
+	}
+
+		ul a:last-of-type{
+			margin-right: 0px;
+		}
+
+			ul a i:hover{
+				transform: scale(1.5);
+			}

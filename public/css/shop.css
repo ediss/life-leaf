@@ -1,0 +1,148 @@
+:root {
+  --spacing: 1.4rem;
+  --spacing-half: calc(var(--spacing) / 2);
+  --color-main: hsl(224, 15%, 65%);
+  --color-main-hover: hsl(224, 25%, 75%);
+}
+
+html {
+  font-family: Merriweather, serif;
+  line-height: 1.4;
+  background-color: rgb(219, 225, 241);
+  height: 100%;
+}
+p {
+  margin: 0 0 var(--spacing-half) 0;
+}
+[role="tabpanel"] {
+  border: 0;
+  /*border-bottom: 1px solid #ccc;*/
+  box-shadow: none;
+}
+.product {
+  position: relative;
+  box-sizing: border-box; 
+  padding: var(--spacing);
+  background-color: #fff;
+  background-color: rgba(250, 250, 250, 0.97);
+  box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.23);
+}
+@media only screen and (min-width: 600px) {
+  .product {
+    width: 80%;
+    margin: var(--spacing) auto;
+  }
+}
+@media only screen and (min-width: 1000px) { 
+  .product__info {
+    display: flex;
+  }
+  .info__section {
+    width: 50%;
+  }
+  .info__section:first-child {    
+    margin-right: 1%; 
+  }
+  .info__section:last-child {
+    margin-left: 1%; 
+  }
+}
+.product__title {
+  margin: 0;
+  font-weight: normal;
+  font-size: 1.3rem;
+  margin-bottom: var(--spacing-half);
+}
+@media only screen and (min-width: 1000px) { 
+  .product__title {
+    font-size: 1.6rem;
+  }
+}
+.product__title--secondary {
+  margin: var(--spacing) 0 var(--spacing-half) 0;
+  font-size: 1.2rem;
+  font-weight: normal;
+}
+.product__price {
+  font-size: 1.9rem;
+}
+
+.product__image {
+  display: block;
+  max-width: 100%;
+  width: 100%;
+  margin-left: auto;
+margin-right: auto;
+  margin-bottom: var(--spacing);
+}
+@media only screen and (min-width: 1000px) { 
+  .product__image {
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+.product__description {
+  padding-bottom: var(--spacing);
+}
+.label {
+  display: block;
+  margin: var(--spacing) 0 var(--spacing-half) 0;
+  font-size: 1.2rem;
+  font-weight: normal;
+}
+.button--purchase {
+  padding: var(--spacing-half);
+  border: 0;
+  background: var(--color-main);
+}
+.button--purchase:hover {
+  background: var(--color-main-hover);
+}
+
+.product__info-tabs {
+  margin: var(--spacing) 0;
+}
+.share__list{
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.share__item {
+  padding: var(--spacing-half);
+}
+.icon {
+  display: block;
+  width: 24px;
+  height: 24px;
+  line-height: 24px;  
+}
+.icon__path--empty {
+  fill: transparent;
+  stroke: var(--text-color);
+}
+.icon__path--filled {
+  fill: var(--text-color);
+}
+.icon-name {
+  position: relative;
+  top: -8px;
+  left: 8px;
+}
+
+
+
+.u-spacing-bottom {
+  margin-bottom: var(--spacing);
+}
+.u-visually-hidden {
+    position: absolute;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    height: 1px;
+    width: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+}
